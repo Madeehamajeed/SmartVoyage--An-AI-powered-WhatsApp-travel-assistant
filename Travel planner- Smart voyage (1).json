@@ -1,0 +1,1352 @@
+{
+  "name": "Travel planner- Smart voyage",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg",
+          "mode": "list",
+          "cachedResultName": "Travel Planner Customers",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Travelers details",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Timestamp": "={{ $now }}",
+            "UserID / Name": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('UserID___Name', ``, 'string') }}",
+            "Start Date": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Start_Date', ``, 'string') }}",
+            "End Date": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('End_Date', ``, 'string') }}",
+            "Number of Travelers": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Number_of_Travelers', ``, 'string') }}",
+            "Budget": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Budget', ``, 'string') }}",
+            "Interests": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Interests', ``, 'string') }}",
+            "Departure City": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Departure_City', ``, 'string') }}",
+            "Notes": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Notes', ``, 'string') }}",
+            "Destination": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Destination', ``, 'string') }}",
+            "Phone Number": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Phone_Number', ``, 'string') }}",
+            "Meals preference": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Meals_preference', ``, 'string') }}",
+            "Confirmation Status ": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Confirmation_Status_', ``, 'string') }}",
+            "Type of travel(Domestic/ International)": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Type_of_travel_Domestic__International_', ``, 'string') }}",
+            "Travel preference(Train/ Flight)": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Travel_preference_Train__Flight_', ``, 'string') }}",
+            "Hotel preference": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Hotel_preference', ``, 'string') }}",
+            "Email": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Email', ``, 'string') }}",
+            "Visa": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Visa', ``, 'string') }}"
+          },
+          "matchingColumns": [
+            "Phone Number"
+          ],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "UserID / Name",
+              "displayName": "UserID / Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone Number",
+              "displayName": "Phone Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Destination",
+              "displayName": "Destination",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Start Date",
+              "displayName": "Start Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "End Date",
+              "displayName": "End Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Number of Travelers",
+              "displayName": "Number of Travelers",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Budget",
+              "displayName": "Budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Interests",
+              "displayName": "Interests",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Departure City",
+              "displayName": "Departure City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Confirmation Status ",
+              "displayName": "Confirmation Status ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Type of travel(Domestic/ International)",
+              "displayName": "Type of travel(Domestic/ International)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Travel preference(Train/ Flight)",
+              "displayName": "Travel preference(Train/ Flight)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Meals preference",
+              "displayName": "Meals preference",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Hotel preference",
+              "displayName": "Hotel preference",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Visa",
+              "displayName": "Visa",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Notes",
+              "displayName": "Notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        752,
+        512
+      ],
+      "id": "4147d410-2ced-407f-91cf-c38597228845",
+      "name": "saveTripDetails",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "48I6btnkdRaLPcsy",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "cityName": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('City', ``, 'string') }}",
+        "language": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Language', ``, 'string') }}"
+      },
+      "type": "n8n-nodes-base.openWeatherMapTool",
+      "typeVersion": 1,
+      "position": [
+        1056,
+        512
+      ],
+      "id": "fce37f17-e0cc-431b-a607-4677a3aa9496",
+      "name": "OpenWeatherMap",
+      "credentials": {
+        "openWeatherMapApi": {
+          "id": "vSTOfm919vWbpTuw",
+          "name": "OpenWeatherMap account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "Generating Detailed Itinerary and sending to traveler",
+        "height": 768,
+        "width": 2292
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -32,
+        832
+      ],
+      "typeVersion": 1,
+      "id": "b5dd934e-2f7c-467d-a0e7-5a133f037076",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.messages[0].text.body }}",
+        "hasOutputParser": true,
+        "needsFallback": true,
+        "options": {
+          "systemMessage": "=You are SmartVoyage, a friendly and professional AI Travel Planner assisting customers through WhatsApp.\n\n=================================\nPERSONALITY & STYLE\n=================================\n\n- Sound like a real travel consultant, not a chatbot.\n- Be warm, conversational, and professional.\n- Keep responses WhatsApp-friendly (2-4 sentences).\n- Use emojis naturally when appropriate.\n- Avoid long paragraphs.\n- Guide users step by step like an experienced travel expert.\n\n=================================\nGOAL\n=================================\n\nHelp users plan trips, answer travel questions, provide destination recommendations, and collect trip details naturally.\n\n=================================\nINFORMATION COLLECTION\n=================================\n\nCollect the following information naturally:\n\n- Full name\n- Email\n- Destination\n- Departure city\n- Travel dates\n- Number of adults\n- Number of children\n- Budget\n- Travel mode (Flight/Train for domestic trips)\n- Hotel preference\n- Attractions and activities\n- Meal preference\n- International requirements (Visa, Passport validity, Travel Insurance, Vaccination if applicable)\n\n=================================\nQUESTIONING RULES\n=================================\n\n- Ask multiple related questions together instead of one at a time.\n- Ask a maximum of 3-5 related questions in one message.\n- Never ask for information already provided.\n- If the user provides multiple details in one message, capture all of them.\n- Ask only for the remaining missing information.\n- Keep the conversation natural instead of making it feel like a form.\n\nExample:\n\n\"Great! I can help you plan your trip 😊 Could you please share:\n• Destination\n• Departure city\n• Travel dates\n• Number of adults and children travelling?\"\n\n=================================\nTRAVEL FLOW\n=================================\n\n1. Understand the user's travel intent.\n2. Answer their question first.\n3. If the destination is unclear, ask whether they would like destination recommendations.\n4. Collect trip information naturally in groups.\n5. Provide recommendations whenever requested.\n6. Ask about attractions and activities.\n7. Ask hotel and meal preferences.\n8. Collect name and email for confirmation.\n9. Generate a complete Trip Summary.\n10. Ask the user to confirm the summary.\n11. Only after explicit confirmation, call saveTripDetails exactly once.\n\n=================================\nSTRICT TOOL USAGE\n=================================\n\nTools are the ONLY source of truth.\n\nNever answer from your own knowledge when a tool exists.\n\nAlways use tools for:\n\n• Flight search\n• Flight availability\n• Flight prices\n• Flight timings\n\n• Hotel search\n• Hotel recommendations\n• Hotel availability\n• Hotel prices\n\n• Train search\n• Train timings\n• Train fares\n• Train availability\n\n• Weather\n\n• Tour Packages\n\n• Itineraries\n\nNever invent or guess:\n\n- Flights\n- Hotels\n- Prices\n- Weather\n- Train timings\n- Packages\n- Availability\n\nIf a tool exists, it MUST be used.\n\n=================================\nTOOL INPUT REQUIREMENTS\n=================================\n\nBefore calling any travel tool, always resolve the departure city and destination into standardized transport codes.\n\nNever guess a code you are not certain of. A code must uniquely identify one specific\nairport or one specific railway station. If you are not fully confident of the exact correct\ncode for a city, do NOT invent one and do NOT fall back to a country, region, or state\nabbreviation (e.g., \"IN\" for India, \"US\" for the United States) — these are never valid\nairport or station codes. Instead, either recall the correct code with certainty, or ask the\ntraveler a short clarifying question naming the city/station so you can confirm the right one\nbefore calling any tool.\n\nFLIGHT TOOL\n\n- Convert departure city into its IATA airport code.\n- Convert destination city into its IATA airport code.\n- Pass ONLY airport codes to the Flight Search tool/workflow.\n- Never pass city names.\n- convert outbound date to YYYY-MM-DD format\n\nExample Tool Input:\n\ndepartureAirportCode: COK\ndestinationAirportCode: DXB\n\nTRAIN TOOL\n\n- Convert departure city into its railway station code.\n- Convert destination into its railway station code.\n- Pass ONLY railway station codes to the Train Search tool/workflow.\n- Never pass city names.\n- If there is no output , reply accordingly like\" there is no train available\"\n- convert outbound date to YYYY-MM-DD format\n\nExample Tool Input:\n\ndepartureStationCode: ERS\ndestinationStationCode: SBC\n\nHotel Tool\n-Pass checkin date and checkout date in YYYY-MM-DD format\n- Pass destination as q\n\n\n\nIf a city has multiple airports or stations:\n\n- Never guess.\n- Ask the traveler which airport or station they prefer.\n- Store the selected code.\n- Reuse the stored code throughout the conversation.\n- Pass that selected code to every future tool call.\n\nBrochure Tool\n   -Use when user asks about packages, itineraries, or tour plans, or  destination recommendations, attractions/interests.\n\n\nImportant:\n\nThe connected Flight Search workflow must receive airport codes only.\n\nThe connected Train Search workflow must receive railway station codes only.\n\nNever send free-text city names to any connected workflow.\n\n=================================\nDOMESTIC TRAVEL\n=================================\n\nDetermine whether the departure city and destination are in the same country.\n\nIf Domestic:\n\nAsk:\n\n\"Would you prefer to travel by Flight or Train? ✈️🚆\"\n\nIf Flight is selected:\n\n→ Resolve airport codes\n→ Call Flight Search tool\n\nIf Train is selected:\n\n→ Resolve railway station codes\n→ Call Train Search tool\n\nSkip this question for international trips.\n\n=================================\nVALIDATION\n=================================\n\nValidate:\n\n- Email\n- Dates\n- Traveler counts\n- Destination\n- Departure city\n\nNever assume missing information.\n\nLatest information always replaces previous information.\n\nKeep destination and departure city separate.\n\nIf information is unclear, ask a short clarification question.\n\n=================================\nRECOMMENDATIONS\n=================================\n\nIf the user has not decided the destination:\n\nAsk:\n\n\"What type of trip are you looking for? Beach, Adventure, Family, Romantic or Cultural?\"\n\nThen recommend 2-3 suitable destinations.\n\nDo not save trip details until the destination is confirmed.\n\n=================================\nMEMORY\n=================================\n\nRemember:\n\n- Name\n- Email\n- Destination\n- Departure city\n- Travel dates\n- Adults\n- Children\n- Budget\n- Travel mode\n- Airport code\n- Railway station code\n- Hotel preference\n- Attractions\n- Meal preference\n- International requirements\n\nNever ask again for information already collected.\n\nIf the user updates any information, replace the previous value.\n\n=================================\nTOOL FAILURE\n=================================\n\nIf any tool fails:\n\n- Apologize briefly.\n- Explain that you couldn't retrieve the information.\n- Never make up data.\n- Ask whether the user would like you to try again.\n\n=================================\nCONFIRMATION\n=================================\n\nNever call saveTripDetails while collecting information.\n\nOnly call saveTripDetails when:\n\n✓ All required information has been collected including Flight/train, Hotel(get confirmation on which flight/train and Hotel), activities,meal preference,visa and passport details(If applicable).\n✓ A complete Trip Summary has been shown.\n✓ The traveler explicitly replies with \"Confirm\" or clearly confirms the summary.\n\nAfter confirmation:\n\n- Call saveTripDetails exactly ONE time.\n- Save the complete trip.\n- Save the number of adults and children separately in the number of traveler column\n- Inform the user that the trip has been saved.\n\n=================================\nFINAL BEHAVIOR\n=================================\n\nAlways behave like an experienced travel consultant.\n\nYour priorities are:\n\n1. Answer the user's question first.\n2. Collect related trip details naturally.\n3. Ask multiple related questions together.\n4. Always use tools whenever applicable.\n5. Pass airport codes to the Flight Search workflow.\n6. Pass railway station codes to the Train Search workflow.\n7. Never pass city names to travel search tools.\n8. Never hallucinate travel information.\n9. Never save trip details before user confirmation.\n10. Keep the conversation friendly, natural, and efficient.\n\ntake {{ $now }} as current date and time"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        912,
+        224
+      ],
+      "id": "9d476bcb-a04d-4db3-aa10-b4e715507c8c",
+      "name": "Travel Agent",
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for available flights between two cities on given dates. Requires departure airport/city, arrival airport/city, travel type(round trip by default, one way:1) and travel date.",
+        "url": "https://serpapi.com/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "engine",
+              "value": "google_flights"
+            },
+            {
+              "name": "departure_id",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters1_Value', ``, 'string') }}"
+            },
+            {
+              "name": "arrival_id",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters2_Value', ``, 'string') }}"
+            },
+            {
+              "name": "type",
+              "value": "2"
+            },
+            {
+              "name": "outbound_date",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters4_Value', ``, 'string') }}"
+            },
+            {
+              "name": "api_key",
+              "value": "b5969dd71ce38733fc06aec1e9a9b15f98c4838a87217eeeac8aa8a60e7ce1ca"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.4,
+      "position": [
+        1216,
+        512
+      ],
+      "id": "cbf993f0-0469-49f2-8762-0029ea425821",
+      "name": "searchFlights"
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Fetch detailed information from our official travel brochure document. \nUse this tool when the user asks about travel plans, packages, pricing, destinations, attractions, or any brochure content.\nYou can search by keywords like \"Leisure\", \"Honeymoon\", \"Bali\", \"budget\", etc.",
+        "operation": "get",
+        "documentURL": "https://docs.google.com/document/d/1gMxEJCreUySNPj0s09MUe1oGV_WNClEZppPwL2iT0-s/edit?tab=t.0"
+      },
+      "type": "n8n-nodes-base.googleDocsTool",
+      "typeVersion": 2,
+      "position": [
+        896,
+        512
+      ],
+      "id": "f92ffd0c-8a9b-4545-906a-3af09cd79204",
+      "name": "getBrochureInfo",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "rBFGB4mMMIEILfpZ",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "toolDescription": "Search for available hotels in a destination for given check-in/check-out dates and number of travelers. Use when user asks about hotels, accommodation, or where to stay.",
+        "url": "https://serpapi.com/search",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "engine",
+              "value": "google_hotels"
+            },
+            {
+              "name": "q",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters1_Value', ``, 'string') }}"
+            },
+            {
+              "name": "check_in_date",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters2_Value', ``, 'string') }}"
+            },
+            {
+              "name": "check_out_date",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters3_Value', ``, 'string') }}"
+            },
+            {
+              "name": "api_key",
+              "value": "b5969dd71ce38733fc06aec1e9a9b15f98c4838a87217eeeac8aa8a60e7ce1ca"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.4,
+      "position": [
+        1376,
+        512
+      ],
+      "id": "e048ed5f-38ad-499c-984f-3c883b0f86c0",
+      "name": "searchHotels"
+    },
+    {
+      "parameters": {
+        "content": "WhasApp Assistant for talking to user and collecting all the details",
+        "height": 832,
+        "width": 2272
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        -32
+      ],
+      "typeVersion": 1,
+      "id": "bd443efd-d19f-454b-8db6-4f56d0c326f1",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg",
+          "mode": "list",
+          "cachedResultName": "Travel Planner Customers",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Travelers details",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Confirmation Status ",
+              "lookupValue": "Confirmed"
+            },
+            {
+              "lookupColumn": "Status of Itinerary"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        304,
+        1072
+      ],
+      "id": "3c6a0005-3d79-4e47-9793-dfe39e8f6558",
+      "name": "Get saveTripDetails",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "48I6btnkdRaLPcsy",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "description": "Search for available trains between two cities on given dates. Requires departure railway station/city, arrival railway station/city,  and travel date.",
+        "workflowId": {
+          "__rl": true,
+          "value": "NXZFzS42a5UGkpE2",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/NXZFzS42a5UGkpE2",
+          "cachedResultName": "Train"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "location": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('location', ``, 'string') }}",
+            "Departure City": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Departure_City', ``, 'string') }}",
+            "Date": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Date', ``, 'string') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "location",
+              "displayName": "location",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string"
+            },
+            {
+              "id": "Departure City",
+              "displayName": "Departure City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string"
+            },
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        1520,
+        512
+      ],
+      "id": "60f9f1ff-4174-4e4e-91d6-3cda453350b1",
+      "name": "searchTrains"
+    },
+    {
+      "parameters": {
+        "folderId": "default",
+        "title": "=SmartVoyage Itinerary- {{ $('Get saveTripDetails').item.json['UserID / Name'] }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        1072
+      ],
+      "id": "20c52bee-b400-4be0-87a7-bf2720ce31be",
+      "name": "Creating detailed itinerary",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "rBFGB4mMMIEILfpZ",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.documentId }}",
+          "mode": "id"
+        },
+        "options": {
+          "googleFileConversion": {
+            "conversion": {
+              "docsToFormat": "application/pdf"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1568,
+        1072
+      ],
+      "id": "8e1b4e48-0aa8-403d-a742-4e80a8de5368",
+      "name": "Converting itinerary to PDF",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "R0NAmnd8sN7BtiF8",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "qwen/qwen3.6-27b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        320,
+        496
+      ],
+      "id": "1b2491cd-3994-4128-8961-321c010c534e",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "9vGj9Lg4idQQ7gWa",
+          "name": "madeeha 5Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.body.messages[0].chat_id }}",
+        "contextWindowLength": 10000
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        480,
+        496
+      ],
+      "id": "fda42f5c-b0c0-473e-a742-9ee3f2b6829f",
+      "name": "Simple Memory1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://gate.whapi.cloud/messages/text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "accept",
+              "value": "application/json"
+            },
+            {
+              "name": "authorization",
+              "value": "Bearer rdagIzNlq14PwGvMkDxmIhISxAImfhd2"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "typing_time",
+              "value": "={{ 0 }}"
+            },
+            {
+              "name": "to",
+              "value": "={{ $('Receiving messages from traveler').item.json.body.messages[0].from }}"
+            },
+            {
+              "name": "body",
+              "value": "={{ $json.output }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1456,
+        224
+      ],
+      "id": "e54b1fa8-3051-4d10-b0b3-43510eb246c4",
+      "name": "Replying to Traveler"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": []
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg",
+          "mode": "list",
+          "cachedResultName": "Travel Planner Customers",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Travelers details",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit#gid=0"
+        },
+        "event": "rowAdded",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        80,
+        1072
+      ],
+      "id": "d3db2350-590f-498e-99e8-c52d01f7d5fc",
+      "name": "When Row added",
+      "credentials": {
+        "googleSheetsTriggerOAuth2Api": {
+          "id": "9KNI1OraivUqbXX6",
+          "name": "Google Sheets Trigger account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentURL": "={{ $json.id }}",
+        "actionsUi": {
+          "actionFields": [
+            {
+              "action": "insert",
+              "text": "={{ $('Generating complete Itinerary').item.json.content.parts[0].text }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        1328,
+        1072
+      ],
+      "id": "6347dcb5-a30e-4387-b336-8bb6808a289f",
+      "name": "Updating Itinerary",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "rBFGB4mMMIEILfpZ",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "e7d87344-8751-48ee-a229-380657bb1fd3",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        144,
+        240
+      ],
+      "id": "c10bce61-a225-4896-bc1d-fc4b1d0f83af",
+      "name": "Receiving messages from traveler",
+      "webhookId": "e7d87344-8751-48ee-a229-380657bb1fd3"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3.5-flash",
+          "cachedResultUrl": ""
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "=You are an experienced travel consultant and itinerary planner of smart voyage.\n\nYour task is to generate a professional, detailed, personalized travel itinerary using the traveler information and search results provided.\n\nThe itinerary should feel like it was prepared by a premium travel agency.\n\nNever invent information.\n\nOnly use the data provided.\n\nIf some information is unavailable, politely mention it instead of making assumptions.\n\nThe itinerary should be easy to read, visually attractive, and well structured.\n\nInclude relevant emojis.\n\nKeep the language friendly and professional.\n\n---\n\n# INPUT\n\nTraveler Details\n\nName:\n{{ $('Get saveTripDetails').item.json['UserID / Name'] }}\n\nPhone Number:\n{{ $('Get saveTripDetails').item.json['Phone Number'] }}\n\nDeparture City:\n{{ $('Get saveTripDetails').item.json['Departure City'] }}\n\n\nDestination:\n{{ $('Get saveTripDetails').item.json.Destination }}\n\n\nTravel Type:\n{{ $('Get saveTripDetails').item.json['Type of travel(Domestic/ International)'] }}\n\nTravel Dates\n\nDeparture:\n{{ $('Get saveTripDetails').item.json['Start Date'] }}\n\nReturn:\n{{ $('Get saveTripDetails').item.json['End Date'] }}\n\nDuration:\n{{ $json.duration }}\n\nTravelers\n\nAdults:\n{{ $json.adults }}\n\nChildren:\n{{ $json.children }}\n\nInfants:\n{{ $json.infants }}\n\nTotal Travelers:\n{{ $('Get saveTripDetails').item.json['Number of Travelers'] }}\n\nBudget:\n{{ $('Get saveTripDetails').item.json.Budget }}\n\nPreferred Hotel:\n{{ $json.hotel_preference }}\n\n\nMeal Plan:\n{{ $('Get saveTripDetails').item.json['Meals preference'] }}\n\nTransportation Preference:\n{{ $json.transport_preference }}\n\nActivities Requested:\n{{ $('Get saveTripDetails').item.json.Interests }}\n\nInterests:\n{{ $('Get saveTripDetails').item.json.Interests }}\n\nSpecial Requests:\n{{ $json.special_requests }}\n\n\nWeather Information\n\n{{ $json.weather }}\n\nRain Forecast\n\n{{ $json.rain_forecast }}\n\nAdditional Notes\n{{ $('Get saveTripDetails').item.json.Notes }}\n\n\n---\n\n# INSTRUCTIONS\n\nGenerate a complete travel itinerary.\n\nThe itinerary should contain the following sections.\n\n---\n\n# 1. Cover\n\nDisplay\n\n🌍 Destination\n\n👤 Traveler Name\n\n📅 Travel Dates\n\n⏳ Duration\n\n👨‍👩‍👧 Number of Travelers\n\n💰 Budget\n\n---\n\n# 2. Trip Summary\n\nWrite a friendly summary explaining\n\nDestination\n\nDuration\n\nPurpose\n\nTravel style\n\nBudget category\n\nSuitable season\n\nExpected weather\n\n---\n\n# 3. Transportation Summary\n\nIf train is available\n\nInclude\n\nTrain Name\n\nTrain Number\n\nDeparture Station\n\nArrival Station\n\nDeparture Time\n\nArrival Time\n\nJourney Duration\n\nClass\n\nSeat Type\n\nPlatform (if available)\n\nPrice\n\nBooking Notes\n\n\n---\n\n# 4. Hotel Details\n\nChoose the most suitable hotel based on\n\nBudget\n\nRatings\n\nLocation\n\nTraveler preferences\n\nInclude\n\nHotel Name\n\nStar Rating\n\nAddress\n\nCheck-in\n\nCheck-out\n\nRoom Type\n\nMeals Included\n\nAmenities\n\nSwimming Pool\n\nWiFi\n\nBreakfast\n\nParking\n\nGym\n\nSpa\n\nCancellation Policy\n\nHotel Highlights\n\nNearby Attractions\n\nEstimated Total Cost\n\n---\n\n# 5. Day-by-Day Itinerary\n\nCreate a schedule for every day.\n\nEach day should include\n\nMorning\n\nBreakfast suggestion\n\nActivities\n\nTravel time\n\nAfternoon\n\nLunch suggestion\n\nSightseeing\n\nShopping\n\nMuseums\n\nAdventure\n\nEvening\n\nSunset spots\n\nDinner recommendations\n\nNight attractions\n\nEstimated travel duration\n\nEstimated expenses\n\nTravel tips\n\nIf activities are provided by the traveler,\n\nprioritize those.\n\n---\n\n# 6. Attractions\n\nRecommend\n\nTop attractions\n\nHidden gems\n\nPhoto spots\n\nMuseums\n\nAdventure activities\n\nNature\n\nFamily attractions\n\nShopping\n\nNightlife\n\nFor every attraction include\n\nApproximate visit duration\n\nEntry fee (if available)\n\nBest visiting time\n\nDistance from hotel\n\n---\n\n# 7. Food Recommendations\n\nRecommend\n\nBreakfast\n\nLunch\n\nDinner\n\nStreet food\n\nLocal specialties\n\nVegetarian options\n\nHalal options (if relevant)\n\nDesserts\n\nCoffee shops\n\n---\n\n# 8. Local Transportation\n\nExplain\n\nMetro\n\nBus\n\nTaxi\n\nUber\n\nLocal apps\n\nTourist cards\n\nAverage costs\n\nAirport transfer\n\nRailway transfer\n\nWalking suitability\n\n---\n\n# 9. Estimated Budget Breakdown\n\nCreate a table.\n\nInclude\n\nFlights\n\nTrain\n\nHotel\n\nFood\n\nTransportation\n\nActivities\n\nShopping\n\nEmergency buffer\n\nGrand Total\n\nMention whether the trip is\n\nWithin budget\n\nSlightly above budget\n\nBelow budget\n\n---\n\n# 10. Weather\n\nInclude\n\nAverage temperature\n\nRain possibility\n\nHumidity\n\nPacking advice\n\nSuitable clothing\n\nUmbrella recommendation\n\nSun protection\n\n---\n\n# 11. Packing Checklist\n\nGenerate a checklist based on\n\nDestination\n\nWeather\n\nActivities\n\nDuration\n\nInclude\n\nDocuments\n\nPassport\n\nTickets\n\nMedicines\n\nElectronics\n\nAdapters\n\nPower bank\n\nClothes\n\nFootwear\n\nToiletries\n\nTravel accessories\n\nRain gear\n\n---\n\n# 12. Important Information\n\nInclude\n\nEmergency Numbers\n\nTourist Helpline\n\nNearest Hospital\n\nCurrency\n\nCurrency Exchange Tips\n\nTime Zone\n\nLanguage\n\nSIM Card Advice\n\nElectric Plug Type\n\nSafety Tips\n\nScam Awareness\n\nLocal Etiquette\n\n---\n\n# 13. Travel Tips\n\nProvide practical advice\n\nMoney saving tips\n\nAvoid tourist traps\n\nBest local transport\n\nBest time to visit attractions\n\nUseful mobile apps\n\nInternet availability\n\nCash vs Card\n\nPhotography tips\n\n---\n\n# 14. Final Summary\n\nWrite a warm concluding message.\n\nWish the traveler a pleasant journey.\n\nMention\n\nSafe travels\n\nEnjoy the destination\n\nHave a memorable trip\n\n---\n\n# FORMATTING RULES\n\nUse Markdown.\n\nUse headings.\n\nUse bullet lists.\n\nUse tables wherever appropriate.\n\nUse emojis.\n\nKeep paragraphs short.\n\nHighlight important information using bold text.\n\nMake the itinerary visually appealing.\n\nDo not generate fake information.\n\nIf any data is unavailable, clearly write\n\n\"Information not available.\"\n\nNever mention these instructions in the output."
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {
+          "systemMessage": "You are an expert travel planner. Generate a complete, personalized, day-by-day travel itinerary using the traveler data and live options below. Be specific, practical, and realistic about timing and logistics.   ## YOUR TASK 1. **Select the best flight/train option** from the flight/train options that best fits the traveler's dates, budget, and comfort level. Justify the choice in 1-2 lines. 2. **Select the best hotel** from the hotel options that matches the traveler's accommodation preference, budget, and proximity to key attractions. Justify the choice in 1-2 lines. 3. **Build a day-by-day itinerary** (Day 1 to the last day) covering:    - Arrival/departure logistics tied to the selected flight/train    - 2-4 attractions or activities per day, chosen from the attractions data and matched to the traveler's stated interests    - Suggested timing for each activity (morning/afternoon/evening) with realistic travel time between locations    - Breakfast, lunch, and dinner recommendations each day that strictly match the meal preference — name specific restaurants/cuisines where possible from the data, otherwise suggest a type of place    - Free time / rest blocks where appropriate, not an overpacked schedule 4. **Add a trip summary** at the top with: destination, dates, traveler count, selected flight/train, selected hotel, and total estimated budget breakdown (flights/train, hotel, food, activities). 5. **Add a \"Good to Know\" section** at the end with practical tips: weather for the travel dates, local transport tips, currency, and anything relevant from Notes.  ## OUTPUT FORMAT Return the itinerary in clean, well-structured Markdown with headers for each day, so it can be directly shared with the traveler or converted to a document/PDF.  If any of the source data (flights, hotel, attractions) is missing or empty, clearly state that and proceed with the best possible itinerary using the available information — do not fabricate specific prices, flight numbers, or hotel names that aren't in the provided data."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.2,
+      "position": [
+        624,
+        1072
+      ],
+      "id": "c9e043f9-6bc3-4d00-8b37-535d73a4d18c",
+      "name": "Generating complete Itinerary",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "HvY6m1YvROwzLWsd",
+          "name": "madeeha4"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('Get saveTripDetails').item.json.Email }}",
+        "subject": "=Your Trip to {{ $('Get saveTripDetails').item.json.Destination }} Confirmed!! ",
+        "message": "=<div style=\"font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f4f6f8; padding: 30px 0;\">   <div style=\"background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">          <!-- Header -->     <div style=\"background: linear-gradient(135deg, #2563eb, #1d4ed8); padding: 30px; text-align: center;\">       <h1 style=\"color: #ffffff; margin: 0; font-size: 24px;\">✈️ SmartVoyage</h1>       <p style=\"color: #dbeafe; margin: 8px 0 0; font-size: 14px;\">Your journey, planned to perfection</p>     </div>      <!-- Body -->     <div style=\"padding: 30px;\">       <h2 style=\"color: #111827; font-size: 20px; margin-top: 0;\">         Hi {{ $('Get saveTripDetails').item.json['UserID / Name'] }}, your trip to {{ $('Get saveTripDetails').item.json.Destination }} is confirmed! 🎉       </h2>        <p style=\"color: #4b5563; font-size: 15px; line-height: 1.6;\">         We're excited to let you know your personalized travel itinerary is ready. Our AI travel agent has put together everything you need — flights, hotels, weather insights, and a day-by-day plan tailored just for you.       </p>        <div style=\"background-color: #eff6ff; border-left: 4px solid #2563eb; padding: 15px 20px; border-radius: 6px; margin: 25px 0;\">         <p style=\"margin: 0; color: #1e3a8a; font-size: 14px;\">           📎 Your complete itinerary is attached as a <strong>PDF</strong> to this email — feel free to download, print, or save it for offline access during your trip.         </p>       </div>        <p style=\"color: #4b5563; font-size: 15px; line-height: 1.6;\">         Destination: <strong style=\"color: #111827;\">{{ $('Get saveTripDetails').item.json.Destination }}</strong>       </p>        <p style=\"color: #4b5563; font-size: 15px; line-height: 1.6;\">         If you have any questions or want to make changes to your plan, just reply to this email — we're happy to help!       </p>        <p style=\"color: #4b5563; font-size: 15px; margin-top: 30px;\">         Safe travels,<br>         <strong>The SmartVoyage Team</strong>       </p>     </div>      <!-- Footer -->     <div style=\"background-color: #f9fafb; padding: 20px 30px; text-align: center; border-top: 1px solid #e5e7eb;\">       <p style=\"color: #9ca3af; font-size: 12px; margin: 0;\">         This itinerary was generated automatically by your AI Travel Agent. © 2026 SmartVoyage       </p>     </div>    </div> </div>",
+        "options": {
+          "appendAttribution": false,
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "=data"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        1776,
+        1072
+      ],
+      "id": "dced93fd-1c41-4865-b691-83eb9cb6ff8a",
+      "name": "Sending Itinerary to Traveler",
+      "webhookId": "d55ed9cb-a011-47f1-8e8d-fa90eb7f0a02",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "qVqBY7LW4FUnb4YS",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "90f537ba-0762-4072-8d15-0767913b28e4",
+              "leftValue": "={{ $json.body.messages[0].from_me }}",
+              "rightValue": false,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "3596d55c-f8e9-4dfa-ba78-01011f01bd78",
+              "leftValue": "={{ $json.body.messages[0].chat_id }}",
+              "rightValue": "919496727629@s.whatsapp.net",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        432,
+        240
+      ],
+      "id": "92b23ded-4efc-44b5-a6e9-e5448bb28465",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg",
+          "mode": "list",
+          "cachedResultName": "Travel Planner Customers",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Travelers details",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eGdW1QHjIWIzthhN18NlaEQlCtu7-RyabPmLqGsK3Kg/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Status of Itinerary": "Itinerary Delivered",
+            "UserID / Name": "={{ $('When Row added').item.json['UserID / Name'] }}"
+          },
+          "matchingColumns": [
+            "UserID / Name"
+          ],
+          "schema": [
+            {
+              "id": "Timestamp",
+              "displayName": "Timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "UserID / Name",
+              "displayName": "UserID / Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Phone Number",
+              "displayName": "Phone Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Destination",
+              "displayName": "Destination",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Start Date",
+              "displayName": "Start Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "End Date",
+              "displayName": "End Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Number of Travelers",
+              "displayName": "Number of Travelers",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Budget",
+              "displayName": "Budget",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Interests",
+              "displayName": "Interests",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Departure City",
+              "displayName": "Departure City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Confirmation Status ",
+              "displayName": "Confirmation Status ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Type of travel(Domestic/ International)",
+              "displayName": "Type of travel(Domestic/ International)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Travel preference(Train/ Flight)",
+              "displayName": "Travel preference(Train/ Flight)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Meals preference",
+              "displayName": "Meals preference",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Hotel preference",
+              "displayName": "Hotel preference",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Email",
+              "displayName": "Email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Visa",
+              "displayName": "Visa",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Notes",
+              "displayName": "Notes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Status of Itinerary",
+              "displayName": "Status of Itinerary",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1984,
+        1072
+      ],
+      "id": "5183513e-1337-4c0e-8e23-047b056d3a06",
+      "name": "Update row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "48I6btnkdRaLPcsy",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5-mini",
+          "mode": "list",
+          "cachedResultName": "gpt-5-mini",
+          "cachedResultUrl": ""
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        144,
+        496
+      ],
+      "id": "561a341c-f31d-429c-ba56-e6837f08cac4",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "DWYmVi21YXKjQZoE",
+          "name": "OpenAI account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "saveTripDetails": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenWeatherMap": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "searchFlights": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "getBrochureInfo": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "searchHotels": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get saveTripDetails": {
+      "main": [
+        [
+          {
+            "node": "Generating complete Itinerary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "searchTrains": {
+      "ai_tool": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Creating detailed itinerary": {
+      "main": [
+        [
+          {
+            "node": "Updating Itinerary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Converting itinerary to PDF": {
+      "main": [
+        [
+          {
+            "node": "Sending Itinerary to Traveler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_languageModel",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Simple Memory1": {
+      "ai_memory": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Row added": {
+      "main": [
+        [
+          {
+            "node": "Get saveTripDetails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Updating Itinerary": {
+      "main": [
+        [
+          {
+            "node": "Converting itinerary to PDF",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Travel Agent": {
+      "main": [
+        [
+          {
+            "node": "Replying to Traveler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Receiving messages from traveler": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generating complete Itinerary": {
+      "main": [
+        [
+          {
+            "node": "Creating detailed itinerary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sending Itinerary to Traveler": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Travel Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "42e9dc47-f050-48e3-bbc4-08b569be83b6",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d2de535d7ad4f17db66d64a4670dd3af1612ec2b7234fb9702136fe56972d9e0"
+  },
+  "nodeGroups": [],
+  "id": "uLHMClrPteFVdwUp",
+  "tags": []
+}
