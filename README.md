@@ -58,7 +58,7 @@ Feature availability depends on the configured integrations, API access, and wor
 
 ## Technology Stack
 
-| n8n                                           | Workflow orchestration and automation |
+| n8n |                                         | Workflow orchestration and automation |
 | WhatsApp API                                  | Conversational interface |
 | OpenAI                                        | AI-assisted conversation and tool use |
 | Groq                                          | LLM integration |
